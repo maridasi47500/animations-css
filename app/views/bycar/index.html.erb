@@ -1,0 +1,5 @@
+<img src="/assets/car" class="cetteimg"/>
+<%=select_tag :places, options_for_select(Placepic.all.collect{|x|[x.title,x.pic]}),{onclick:""}%>
+<%=select_tag :stuff, options_for_select(Stuffpic.all.collect{|x|[x.title,x.pic]}),{onclick:""}%>
+<button onclick="changebg(places)">changer de fond</button>
+<button onclick="changestuff(stuff)">lancer un objet</button>

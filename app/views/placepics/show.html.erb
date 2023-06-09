@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @placepic %>
+
+<div>
+  <%= link_to "Edit this placepic", edit_placepic_path(@placepic) %> |
+  <%= link_to "Back to placepics", placepics_path %>
+
+  <%= button_to "Destroy this placepic", @placepic, method: :delete %>
+</div>

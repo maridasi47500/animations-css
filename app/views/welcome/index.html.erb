@@ -1,0 +1,16 @@
+<h1>BIenvenue</h1>
+<p>Salut</p>
+ <!-- Trigger/Open The Modal -->
+ <button id="myBtn">Ajouter un lieu</button>
+
+ <!-- The Modal -->
+ <%=link_to "my other site","/boat/page1"%>
+ <div id="myModal" class="modal">
+
+     <!-- Modal content -->
+       <div class="modal-content">
+             <span class="close">&times;</span>
+             <div><%= render "places/form", place: Place.new %></div>
+                   </div>
+
+ </div> 
